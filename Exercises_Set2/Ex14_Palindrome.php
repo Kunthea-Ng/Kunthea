@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        function isPalindrome($text) {
+        function isPalindrome(string $text): bool {
             $clean = strtolower(str_replace(" ", "", $text));
             return $clean === strrev($clean);
         }
